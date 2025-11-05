@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <title>Passwords-Bank</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+      <img src="images/icon.png" alt="App Logo" class="logo">
+      <span class="app-name">Passwords-Bank</span>
+    </div>
+
+    <div class="nav-right">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#download">Download</a>
+        <a href="#about-developer">About Developer</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- باقي محتوى الموقع هنا -->
+<section id="hero">
+    <img src="images/icon.png" alt="Hero Image" class="hero-image">
+    <h1 class="hero-title">Passwords-Bank</h1>
+    <p class="hero-subtitle">By. Hossam Fekry</p>
+    <div class="hero-buttons">
+        <a href="#about" class="hero-learn-more">Learn More</a>
+        <a href="#download" class="hero-download">Download Now</a>
+    </div>
+
+</section>
+
+<section id="about">
+    <h1 class="section-title">About the App</h1>
+    <p class="about-pragraph">This app is a result of a full year of development, designing and fixing problems.<br> The app will help you save your passwords in a place like a second brain for you<br> this will help you improve your day and improve your passwords strongneth because it help you generate a strong password with the password generator.</p>
+</section>
+
+<section id="features">
+    <h1 class="section-title">Features</h1>
+    <div class="features-container">
+    <div class="feature-card">
+      <img src="images/encryption.png" alt="Security Icon">
+      <h3>Strong Encryption</h3>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/password-generator.png" alt="Password Generator Icon">
+      <h3>Password Generator</h3>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/auto-lock.png" alt="Auto Lock Icon">
+      <h3>Auto Lock</h3>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/user-interface.png" alt="UI Icon">
+      <h3>Modern Interface</h3>
+    </div>
+    
+    <div class="feature-card">
+      <img src="images/authantication.png" alt="authantication Icon">
+      <h3>Session Authantication</h3>
+  </div>
+
+    <div class="feature-card">
+      <img src="images/no-wifi.png" alt="No WiFi Icon">
+      <h3>No internet needed</h3>
+    </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+  <h2 class="section-title">App Gallery</h2>
+
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="images/screenshot 1.png" alt="Home Page Screenshot">
+    </div>
+    <div class="gallery-item">
+      <img src="images/screenshot 2.png" alt="Passwords List Screenshot">
+    </div>
+    <div class="gallery-item">
+      <img src="images/screenshot 3.png" alt="Password Generator Screenshot">
+    </div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <h2 class="section-title">Download Passwords-Bank</h2>
+
+  <div class="download-container">
+    <div class="download-info">
+      <h3>Installation Instructions</h3>
+      <p>1. Click the “Download Now” button.</p>
+      <p>2. Wait until the setup file finishes downloading.</p>
+      <p>3. Open the setup and follow the installation steps.</p>
+      <p>4. Once installed, open the app and set up your settings 🔐</p>
+      <p>5. Then Enjoy using Passwords-Bank 🎉</p>
+    </div>
+
+    <div class="download-link">
+      <a href="https://www.mediafire.com/file/t5uuqruzaie1j3e/Passwords_Bank_Setup.exe/file" 
+         class="download-button" target="_blank">
+        Download Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about-developer">
+    <h1 class="section-title">About the Developer</h1>
+    <img src="images/me.png" alt="The developer photo" class="developer-photo">
+    <h3 class="developer-name">Hossam Fekry</h3>
+    <br>
+    <p class="about-paragraph">Hossam Fekry is a 12 years old developer he is using python and some html and css</p>
+</section>
+
+<section id="contact">
+    <h1 class="section-title">Contact</h1>
+    <div class="contact-container">
+        <div class="contact-card">
+            <img src="images/email.png" alt="email Icon">
+            <h3>hossamfekryed@gmail.com</h3>
+        </div>
+
+        <div class="contact-card">
+            <img src="images/github.png" alt="GitHub Icon">
+            <h3>https://github.com/Hossam-Fekry</h3>
+        </div>
+
+        <div class="contact-card">
+            <img src="images/phone.png" alt="Phone Icon">
+            <h3>+20 01551159401</h3>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Passwords-Bank | Developed by <span>Hossam Fekry</span></p>
+</footer>
+
+
+
+<script>
+      window.addEventListener("scroll", () => {
+          const navbar = document.querySelector(".navbar");
+          if (window.scrollY > 20) {
+              navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>
