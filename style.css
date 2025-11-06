@@ -480,3 +480,48 @@ section {
   color: #00ffb3;
   font-weight: 600;
 }
+
+/* 🍔 Hamburger menu button */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #00ffb3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #00e6a6;
+}
+
+/* 📱 Responsive behavior */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: rgba(10, 10, 10, 0.95);
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #00ffb3;
+    box-shadow: 0 5px 20px rgba(0, 255, 179, 0.2);
+  }
+
+  .nav-right a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 255, 179, 0.1);
+  }
+
+  .nav-right.active {
+    display: flex;
+  }
+}

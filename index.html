@@ -13,15 +13,18 @@
       <img src="images/icon.png" alt="App Logo" class="logo">
       <span class="app-name">Passwords-Bank</span>
     </div>
-
-    <div class="nav-right">
+    
+    <div class="nav-right" id="nav-links">
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#gallery">Gallery</a>
         <a href="#download">Download</a>
         <a href="#about-developer">About Developer</a>
         <a href="#contact">Contact</a>
-    </div>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">
+        ☰
+      </button>
 </nav>
 
 <!-- باقي محتوى الموقع هنا -->
@@ -184,6 +187,13 @@
     } else {
         navbar.classList.remove("scrolled");
     }
+  });
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
   });
 </script>
 
