@@ -115,6 +115,29 @@ body {
   width: 100%;
 }
 
+.lang-toggle {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #00ffb3 0%, #00d699 100%);
+  color: #0b0b0b;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 179, 0.3);
+}
+
+.lang-toggle:hover {
+  background: linear-gradient(135deg, #00ffb3 0%, #00d699 100%);
+  box-shadow: 0 0 25px rgba(0, 255, 179, 0.5);
+  transform: translateY(-2px);
+}
+
+.lang-toggle:active {
+  transform: translateY(0);
+}
+
 
 @media (max-width: 900px) {
   .navbar {
@@ -575,4 +598,47 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* RTL Support for Arabic */
+html[dir="rtl"] .nav-left {
+  order: 2;
+}
+
+html[dir="rtl"] .nav-right {
+  order: 1;
+}
+
+html[dir="rtl"] .navbar {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-buttons {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .features-container {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .download-container {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .contact-container {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-right a::after {
+  right: 0;
+  left: auto;
+}
+
+html[dir="rtl"] .nav-right a::before {
+  content: "";
 }
